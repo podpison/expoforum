@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: url(../img/bgc.png);
+    height: 800px;
+
+}
+
+.header_nav_container{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    padding: 0 13%;
+    align-content: center;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    height: 90px
+}
+
+header a, .a_for_people a{
+    text-decoration: none;
+    color: white;
+}
+
+.header_nav_container a{
+    padding-left: 50px;
+}
+
+.languages{
+    display: flex;
+}
+
+.languages p{
+    margin-left: 11px;
+}
+
+.header_bottom_left_side{
+    padding-left: 16%;
+    padding-top: 10%;
+    color: white;
+}
+
+.header_bottom_left_side h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-bottom: 25px;
+}
+
+.header_bottom_left_side p{
+    padding-bottom: 25px;
+    font-size: 24px
+}
+
+.header_bottom_container img{
+    padding-left: 10px;
+}
+
+.header_bottom_right_side{
+    margin-left: 50%;
+    margin-top: -10%;
+}
+
+.header_bottom_right_a_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.first_a{
+    background: #2378FC;
+}
+
+.second_a{
+    background: #30BCC9;
+}
+
+.third_a{
+    background: #FFC41E;
+}
+
+.four_a{
+    background: #F6404F;
+}
+
+.first_a h3, .second_a h3, .third_a h3, .four_a h3{
+    margin: 30px 88px 0 40px;
+}
+
+.first_a p, .second_a p, .third_a p, .four_a p{
+    margin: 15px 144px 30px 40px;
+    display: flex;
+}
+
+.a_for_people{
+    display: flex;
+    padding: 0 16%;
+    background: #2378FC;
+    text-align: center;
+}
+
+.a_for_people h2{
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.for_organizators, .for_exhibitor, .for_visitors, .for_press{
+    margin-right: 75px
+}
+
+.for_organizators a, .for_exhibitor a, .for_visitors a, .for_press a{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+
+.activity{
+    background-color: #FFC41E;
+    padding: 0 250px;
+}
+
+.head_activity{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 75px 0 55px 0;
+}
+
+.head_a_con{
+    text-align: right;
+}
+
+.head_a_con a{
+    color: black;
+    margin-right: 15px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.gallery a{
+    color: black;
+    text-decoration: none;
+}
+
+.h3_in_gallery{
+    color: rgb(246,64,79);
+}
+
+.first_p_in_gallery{
+    padding: 20px 0 10px 0;
+    font-size: 14px;
+}
+
+.second_p_in_gallery{
+    padding: 10px 0 40px 0;
+}
+
+footer{
+    display: grid;
+    background: #30BCC9;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 65px 16%;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer h3{
+    padding-bottom: 20px;
+}
+
+.input_ing_container{
+    background-color: #F6404F;
+    display: grid;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    padding-left: 4%;
+}
+
+footer button{
+    border: none;
+}
+
+.we_in_social_networks img{
+    padding-right: 20px;
+}
+
+.a_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.we_in_social_networks h3{
+    padding-bottom: 30px;
+}
+
+.input_con{
+    display: flex;
+}
+
+.subscribe_to_news p{
+    padding: 15px 0 25px 0;
+}
+
+.plays img{
+    padding-bottom: 17px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (min-width: 320px){
+    nav, .a_for_people, .activity, footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .languages{
+        margin-left: -50%;
+        margin-top: -10%;
+    }
+    .languages img{
+        height: 20px;
+    }
+    .nav_logo img{
+        margin-top: 40%;
+        width: 50px;
+        height: 15px;
+        margin-left: -50%;
+    }
+    nav{
+        position: absolute;
+        right: 30px;
+    }
+    .header_bottom_left_side h2{
+        font-size: 2em;
+    }
+    .header_bottom_right_a_container{
+        grid-template-columns: 1fr;
+        margin-left: -85%;
+    }
+
+    .header_bottom_right_a_container h3{
+        display: flex;
+    }
+}
