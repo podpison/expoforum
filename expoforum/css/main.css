@@ -20,7 +20,7 @@ header{
     height: 90px
 }
 
-header a, .a_for_people a{
+header a, .a_for_people a, header p{
     text-decoration: none;
     color: white;
 }
@@ -29,18 +29,18 @@ header a, .a_for_people a{
     padding-left: 50px;
 }
 
-.languages{
-    display: flex;
-}
-
-.languages p{
-    margin-left: 11px;
+.center_in_spb{
+    width: 300px;
 }
 
 .header_bottom_left_side{
     padding-left: 16%;
     padding-top: 10%;
     color: white;
+}
+
+.header_bottom_left_side a{
+    display: flex;
 }
 
 .header_bottom_left_side h2{
@@ -59,11 +59,8 @@ header a, .a_for_people a{
 }
 
 .header_bottom_right_side{
-    margin-left: 50%;
+    margin-left: 56%;
     margin-top: -10%;
-}
-
-.header_bottom_right_a_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -86,11 +83,11 @@ header a, .a_for_people a{
 }
 
 .first_a h3, .second_a h3, .third_a h3, .four_a h3{
-    margin: 30px 88px 0 40px;
+    margin: 30px 0 0 40px;
 }
 
 .first_a p, .second_a p, .third_a p, .four_a p{
-    margin: 15px 144px 30px 40px;
+    margin: 15px 0 30px 40px;
     display: flex;
 }
 
@@ -110,7 +107,7 @@ header a, .a_for_people a{
     margin-right: 75px
 }
 
-.for_organizators a, .for_exhibitor a, .for_visitors a, .for_press a{
+.about_company, .for_organizators a, .for_exhibitor a, .for_visitors a, .for_press a{
     display: flex;
     flex-direction: column;
     padding-bottom: 15px;
@@ -119,7 +116,7 @@ header a, .a_for_people a{
 
 .activity{
     background-color: #FFC41E;
-    padding: 0 250px;
+    padding: 0 16%;
 }
 
 .head_activity{
@@ -191,8 +188,8 @@ footer button{
     border: none;
 }
 
-.we_in_social_networks img{
-    padding-right: 20px;
+.we_in_social_networks h3{
+    margin-left: 30px;
 }
 
 .a_container{
@@ -216,43 +213,95 @@ footer button{
     padding-bottom: 17px;
 }
 
+.plays h3{
+    margin-left: 10px;
+}
+
 img{
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 425px){
     nav, .a_for_people, .activity, footer{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .languages{
+    .theme_p{
         margin-left: -50%;
         margin-top: -10%;
     }
-    .languages img{
-        height: 20px;
-    }
     .nav_logo img{
         margin-top: 40%;
-        width: 50px;
+        width: 100px;
         height: 15px;
-        margin-left: -50%;
+        margin-left: 3%;
     }
     nav{
         position: absolute;
-        right: 30px;
+        top: 5px;
+        right: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .header_bottom_left_side h2{
         font-size: 2em;
     }
-    .header_bottom_right_a_container{
-        grid-template-columns: 1fr;
-        margin-left: -85%;
+    .header_bottom_right_side{
+        margin-left: -0%;
+        padding-top: 100px;
+        grid-gap: 10px;
     }
-
-    .header_bottom_right_a_container h3{
+    .header_bottom_right_side a{
+        width: 200px;
+    }
+    .header_bottom_left_side h2{
+        margin-left: 30px;
+    }
+    .a_for_people div, .plays, .for_exhibitor, .for_press, .for_organizators, .for_visitors, .subscribe_to_news{
+        padding-left: 50px;
+    }
+    .about_company h3{
+        padding-left: 55px;
+    }
+    .about_company a{
+        margin-right: 25px;
+    }
+    .for_press h3{
+        margin-left: 50px;
+    }
+    .we_in_social_networks h3{
+        margin-left: 60px;
+    }
+    footer h3{
+        margin-left: 20px;
+    }
+    footer div{
+        padding-bottom: 20px;
+    }
+    footer a{
+        text-align: center;
+    }
+    .gallery{
+        grid-template-columns: auto;
+    }
+    .gallery h3{
+        text-align: center;
+    }
+    .head_activity{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .head_a_con{
+        padding-top: 50px;
+        margin-left: 70px;
         display: flex;
+    }
+    .plays h3{
+        margin-left: 20px;
+    }
+    .subscribe_to_news h3, .input_con{
+        margin: -10px;
     }
 }
