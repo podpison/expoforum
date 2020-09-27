@@ -180,27 +180,27 @@ nav a{
 }
 
 .picture_1{
-    background-image: url(img/Rectangle\ 8.png);
+    background-image: url(../img/Rectangle\ 8.png);
 }
 
 .picture_2{
-    background-image: url(img/Rectangle\ 8\ \(1\).png);
+    background-image: url(../img/Rectangle\ 8\ \(1\).png
 }
 
 .picture_3{
-    background-image: url(img/Rectangle\ 8\ \(2\).png);
+    background-image: url(../img/Rectangle\ 8\ \(2\).png);
 }
 
 .picture_4{
-    background-image: url(img/Rectangle\ 8\ \(3\).png);
+    background-image: url(../img/Rectangle\ 8\ \(3\).png);
 }
 
 .picture_5{
-    background-image: url(img/Rectangle\ 8\ \(4\).png);
+    background-image: url(../img/Rectangle\ 8\ \(4\).png);
 }
 
 .picture_6{
-    background-image: url(img/Rectangle\ 8\ \(5\).png);
+    background-image: url(../img/Rectangle\ 8\ \(5\).png);
 }
 
 .h3_in_gallery{
